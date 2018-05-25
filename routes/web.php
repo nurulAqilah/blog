@@ -22,5 +22,5 @@ Route::get('/tasks/{task}', function ($id) {
 
     $task = DB::table('tasks')->find($id);
 
-    return view('tasks.show', compact ('tasks'));
+    return view('tasks.show', compact ('task'));
 });
